@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/eunis_habitat_classifier.egg-info/PKG-INFO
+src/eunis_habitat_classifier.egg-info/SOURCES.txt
+src/eunis_habitat_classifier.egg-info/dependency_links.txt
+src/eunis_habitat_classifier.egg-info/requires.txt
+src/eunis_habitat_classifier.egg-info/top_level.txt
+tests/test_eunis_client.py
+tests/test_integration.py

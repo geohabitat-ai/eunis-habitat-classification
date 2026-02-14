@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eunis_habitat_classification"
+version = "0.1.0"
+description = "EUNIS to Google Earth Engine Pipeline"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx",
+    "geopandas",
+    "tenacity",
+    "earthengine-api",
+    "jupyter"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Вказуємо, що код лежить у папці src
