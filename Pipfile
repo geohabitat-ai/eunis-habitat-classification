@@ -12,6 +12,7 @@ eunis-habitat-classifier = {file = ".", editable = true}
 matplotlib = "*"
 pre-commit = "*"
 seaborn = "*"
+pyarrow = "*"
 
 [dev-packages]
 ipykernel = "*"
