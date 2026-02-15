@@ -1,0 +1,27 @@
+repos:
+  # Run your tests
+  - repo: local
+    hooks:
+      - id: pytest
+        name: Run pytest
+        entry: pytest
+        language: system
+        pass_filenames: false
+        always_run: true
+
+  # Python checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.ipynb$  # Don't touch notebooks
+      - id: end-of-file-fixer
+        exclude: \.ipynb$  # Don't touch notebooks
+      - id: check-yaml
+      - id: check-added-large-files
+
+  # Strip notebook outputs (keeps notebooks clean in git)
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout

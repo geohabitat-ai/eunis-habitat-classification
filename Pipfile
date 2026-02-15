@@ -9,6 +9,9 @@ geopandas = "*"
 pandas = "*"
 tenacity = "*"
 eunis-habitat-classifier = {file = ".", editable = true}
+matplotlib = "*"
+pre-commit = "*"
+seaborn = "*"
 
 [dev-packages]
 ipykernel = "*"
